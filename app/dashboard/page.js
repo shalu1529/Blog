@@ -14,7 +14,7 @@ export default function Dashboard() {
 
     const fetchPosts = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/posts");
+        const res = await fetch("https://blog-co8w.onrender.com/api/posts");
         const data = await res.json();
         setPosts(data);
       } catch (error) {
