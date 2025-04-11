@@ -103,7 +103,7 @@ export default function PostsPage() {
   const postsPerPage = 6;
 
   useEffect(() => {
-    fetch('https://blog-co8w.onrender.com/api/posts')
+    fetch('https://my-blog-post-1.onrender.com/api/posts')
       .then(res => res.json())
       .then(data => setPosts(data));
   }, []);
