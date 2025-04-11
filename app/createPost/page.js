@@ -98,7 +98,7 @@ const CreatePost = () => {
     const token = localStorage.getItem('token');
 
     try {
-      const response = await fetch('https://blog-co8w.onrender.com/api/posts', {
+      const response = await fetch('https://my-blog-post-1.onrender.com/api/posts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
