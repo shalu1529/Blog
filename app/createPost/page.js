@@ -82,7 +82,7 @@
 
 
 "use client";
-import ProtectedRoute from '../../components/ProtectedRoute';
+//import ProtectedRoute from '../../components/ProtectedRoute';
 import Navbar from '../../components/Navbar';
 import React, { useState } from 'react';
 
@@ -126,7 +126,7 @@ const CreatePost = () => {
 
   return (
 
-    <ProtectedRoute>
+    <>
     <Navbar/>
     <div className="max-w-lg mx-auto mt-10 px-4">
       <form
@@ -175,7 +175,7 @@ const CreatePost = () => {
         {success && <p className="text-green-600 text-center">{success}</p>}
       </form>
     </div>
-    </ProtectedRoute>
+    </>
   );
 };
 

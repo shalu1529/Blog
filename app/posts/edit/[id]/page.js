@@ -110,7 +110,7 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
-import ProtectedRoute from '../../../components/ProtectedRoute';
+//import ProtectedRoute from '../../../components/ProtectedRoute';
 
 export default function EditPostPage() {
   const router = useRouter();
@@ -171,7 +171,7 @@ export default function EditPostPage() {
   if (loading) return <div className="text-center mt-20">Loading...</div>;
 
   return (
-    <ProtectedRoute>
+    <>
     <div className="max-w-xl mx-auto mt-10 px-4">
       <h1 className="text-3xl font-bold mb-6 text-center">Edit Post</h1>
       <form onSubmit={handleSubmit} className="space-y-6 bg-white p-6 rounded-xl shadow-lg">
@@ -210,6 +210,6 @@ export default function EditPostPage() {
         </button>
       </form>
     </div>
-    </ProtectedRoute>
+    </>
   );
 }

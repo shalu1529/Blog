@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
-import ProtectedRoute from "../../components/ProtectedRoute";
+//import ProtectedRoute from "../../components/ProtectedRoute";
 
 export default function Dashboard() {
   const [posts, setPosts] = useState([]);
@@ -30,7 +30,7 @@ export default function Dashboard() {
   );
 
   return (
-    <ProtectedRoute>
+    
     <>
       <Navbar />
       <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 p-6">
@@ -74,7 +74,7 @@ export default function Dashboard() {
         )}
       </div>
     </>
-    </ProtectedRoute>
+    
   );
 }
 
