@@ -17,7 +17,7 @@ export default function SinglePostPage(props) {
 
   useEffect(() => {
     const fetchPost = async () => {
-      const res = await fetch(`https://blog-co8w.onrender.com/api/posts/${id}`, {
+      const res = await fetch(`https://my-blog-post-1.onrender.com/api/posts/${id}`, {
         cache: "no-store",
         credentials: "include",
       });
@@ -35,7 +35,7 @@ export default function SinglePostPage(props) {
     const confirmDelete = confirm("Are you sure you want to delete this post?");
     if (!confirmDelete) return;
     const token = localStorage.getItem('token');
-    const res = await fetch(`https://blog-co8w.onrender.com/api/posts/${id}`, {
+    const res = await fetch(`https://my-blog-post-1.onrender.com/api/posts/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
