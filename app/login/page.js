@@ -16,7 +16,7 @@ export default function Login() {
     e.preventDefault();
     setError(""); // clear previous error
     try {
-      const res = await fetch("https://blog-co8w.onrender.com/api/auth/login", {
+      const res = await fetch("https://my-blog-post-1.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
