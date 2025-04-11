@@ -6,7 +6,7 @@ import { redirect } from "next/navigation";
 export async function deletePost(id) {
   const token = cookies().get("token")?.value;
 
-  const res = await fetch(`http://localhost:5000/api/posts/${id}`, {
+  const res = await fetch(`https://blog-co8w.onrender.com/api/posts/${id}`, {
     method: "DELETE",
     headers: {
       Authorization: `Bearer ${token}`,
