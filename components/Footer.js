@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -21,14 +22,14 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/posts" className="hover:text-white">
+              <Link href="/posts" className="hover:text-white">
                 Posts
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/create" className="hover:text-white">
+              <Link href="/create" className="hover:text-white">
                 Create Post
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -51,28 +52,20 @@ export default function Footer() {
             Follow Me On
           </h3>
           <div className="flex gap-4 text-xl">
-            <a
-              href="https://github.com/YOUR_GITHUB"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white"
-            >
+           
               <FaGithub />
-            </a>
-            <a
-              href="https://linkedin.com/in/YOUR_LINKEDIN"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white"
-            >
-              <FaLinkedin />
-            </a>
+             <FaLinkedin />
+            
           </div>
         </div>
       </div>
 
       <div className="border-t border-gray-700 mt-10 text-center py-4 text-sm">
-        © {new Date().getFullYear()} <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-semibold">Blogify</span>. All rights reserved.
+        © {new Date().getFullYear()}{" "}
+        <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent font-semibold">
+          Blogify
+        </span>
+        . All rights reserved.
       </div>
     </footer>
   );

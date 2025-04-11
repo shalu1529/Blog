@@ -1,34 +1,3 @@
-// "use client"; // ✅ React hooks ke liye zaroori
-
-// import { useState } from 'react';
-// import { useRouter } from 'next/navigation';
-
-// export default function Login() {
-//   const router = useRouter();
-//   const [form, setForm] = useState({ email: '', password: '' });
-
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     const res = await fetch('http://localhost:5000/api/auth/login', {
-//       method: 'POST',
-//       headers: { 'Content-Type': 'application/json' },
-//       credentials: 'include',
-//       body: JSON.stringify(form),
-//     });
-//     if (res.ok) router.push('/dashboard');
-//   };
-
-//   return (
-//     <form onSubmit={handleSubmit} className="max-w-md mx-auto mt-10 space-y-4">
-//       <input type="email" name="email" placeholder="Email" required
-//         className="w-full border p-2" onChange={e => setForm({ ...form, email: e.target.value })} />
-//       <input type="password" name="password" placeholder="Password" required
-//         className="w-full border p-2" onChange={e => setForm({ ...form, password: e.target.value })} />
-//       <button type="submit" className="w-full bg-blue-500 text-white p-2">Login</button>
-//     </form>
-
-//   );
-// }
 
 
 "use client";
@@ -118,10 +87,9 @@ export default function Login() {
         </button>
 
         <p className="mt-4 text-center text-white">
-          {/* Don&apos;t have an account?{" "}
-          <a href="/signup" className="text-blue-500">Sign Up</a> */}
+          
 
-          Don't have an account? <Link href="/register" className="text-blue-500">Sign Up</Link>
+          Do not have an account? <Link href="/register" className="text-blue-500">Sign Up</Link>
         </p>
       </form>
     </div>

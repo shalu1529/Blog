@@ -128,7 +128,7 @@ export default function PostsPage() {
       <section className="text-center py-10 px-4">
         <h1 className="text-4xl font-bold mb-4">Latest Blogs</h1>
         <p className="text-gray-600 max-w-xl mx-auto">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever.
         </p>
 
         {/* Category Filters */}
